@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Titan+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+li{
+    font-family: 'Titan One', cursive;
+    font-weight: 300;
+}
+a{
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
+}
+.cont{
+    width: 100%;
+    background: url('./whit.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    padding: 5px 3%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.mog{
+    width: 100px; 
+}
+
+.av{
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px 5px 0;
+    background-color: aliceblue;
+    width: 1310px;
+   
+}
+
+.av ul li{
+    display: inline-block;
+    margin: 10px 30px;
+    list-style: none;
+    color: #f3a510;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+}
+ 
+.av ul li a{
+    text-decoration: none;
+    font-weight: 400;
+    color: #fbad34;
+    
+}
+
+.av ul li:hover{
+    transform: scale(1.3);
+    transition: transform .2s ease-in-out;
+}
+
+.log{
+     margin-right: 10px;
+     text-decoration: none;
+     font-weight: 400;
+     color: #808080;
+     font-size: larger;
+}
+ 
+.down{
+    display: inline-block;
+    border-radius: 30px;
+    text-decoration: none;
+    padding: 14px 30px;
+    background-image: linear-gradient(45deg, #f3a510, #aa730c);
+    border-top-right-radius: 0;
+    transition: 0.5s;
+    color: white;
+}
+
+.down:hover{
+    opacity: 1;
+    border-top-right-radius: 30px;
+}
+
+.text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 40%;
+   
+}
+
+.en{
+    width: 280px;
+    height: 330px;
+    margin-left: 180px;
+    margin-top: -50px;
+    border-bottom-right-radius: 50px;
+    animation: upDown 2s forwards;
+    transition: animation .3s ease;
+    opacity: ;
+}
+
+@keyframes upDown{
+            
+    from{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.bg{
+    background-color: #f3a510;
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    position: absolute;
+    left: 180px;
+    z-index: -1;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 220px;
+}
+
+.content h1{
+    text-align: center;
+    color: #f3a510;
+    font-weight: 400;
+    font-size: 45px;
+    padding-bottom: 5px;
+    font-family: 'Titan One', cursive;
+    animation: upDown 2s forwards;
+    transition: animation .3s ease;
+
+}
+
+.content p{
+    text-align: center;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.content > .down{
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    padding: 15px 0 2px 0;
+    margin: 10px 0 0 150px;
+}
+
+@media only screen and (min-width: 370px){
+ body{
+     padding: 0;
+     margin: 0;
+     min-height: 120vh;
+     max-width: 375px;
+ }
+
+    .text{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 25%;
+        left: -155px;
+    }
+
+    .content{
+        position: relative;
+        text-align: center;
+        margin-right: 15%;
+        margin-top: 45px;
+        
+    }
+
+    .content .down{
+        margin-left: 60px ;
+    }
+            
+}
+
+
+@media only screen and (min-width: 1120px){ 
+    .mig{
+        display: none;
+    }
+    .en {
+        position: absolute;
+        top: 15%;
+        left: 1%;
+    }
+    .bg {
+        position: absolute;
+        top:15%;
+        left: 15%;
+    }
+
+    .content{
+    position: relative;
+    text-align: center;
+    margin-right: 40px;
+    margin-left: 750px;
+    }
+
+    .content .down{
+        margin-left: 235px;
+    }
+}
